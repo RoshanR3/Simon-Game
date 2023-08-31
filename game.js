@@ -52,7 +52,7 @@ function checkAnswer(currentLevel) {
 
       $("#level-title").text("Game Over, Press Any Key to Restart");
 
-      //2. Call startOver() if the user gets the sequence wrong.
+      
       startOver();
     }
 
@@ -83,11 +83,8 @@ function animatePress(currentColor) {
     $("#" + currentColor).removeClass("pressed");
   }, 100);
 }
-
-//1. Create a new function called startOver().
 function startOver() {
 
-  //3. Inside this function, you'll need to reset the values of level, gamePattern and started variables.
   level = 0;
   gamePattern = [];
   started = false;
